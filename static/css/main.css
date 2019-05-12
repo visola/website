@@ -1,0 +1,112 @@
+* {
+    color: rgb(68,68,68);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    border-bottom: 1px dashed;
+    color: rgb(74, 102, 150);
+    font-size: inherit;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+article::after {
+    background: #ccc;
+    content: ' ';
+    display: block;
+    height: 1px;
+    margin: 25px auto 0;
+    width: 85%;
+}
+
+article h2 {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+article p {
+    margin: 35px 0;
+}
+
+code, code *, pre, pre *, pre code {
+    font-family: 'Droid Sans Mono';
+    font-size: 16px;
+}
+
+#content {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#content img {
+    max-width: 800px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+    border-bottom: none;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#header {
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto 0;
+    max-width: 800px;
+    padding-bottom: 10px;
+    position: relative;
+    vertical-align: top;
+}
+
+#header a {
+    border-bottom: none;
+}
+
+#header h2 {
+    display: inline-block;
+    margin: 0 10px;
+    top: 5px;
+    width: 300px;
+}
+
+#header img.me {
+    border-radius: 50px;
+    width: 50px;
+}
+
+#header section.links {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#header section.links a {
+    padding: 5px;
+}
+
+#header section.links a:hover {
+    background: #d9d9d9;
+}
+
+#header section.links img {
+    width: 24px;
+}
+
+p {
+    text-align: justify;
+}
