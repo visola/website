@@ -2,7 +2,7 @@
 date: 2017-04-01
 title: npm, packages and modules
 author: Vinicius Isola
-tags: node.js, npm, package, module, javascript, beginner
+tags: [node.js, npm, package, module, javascript, beginner]
 ---
 Node.js is a powerful Javascript runtime that can be used to build general purpose applications. npm extends Node.js capabilities with packages built by 3rd parties. These packages provide a variety of functionalities that you might need when building your application.
 

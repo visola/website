@@ -2,7 +2,7 @@
 title: OSGi Maven and Servlet
 date: 2012-07-31
 author: Vinicius Isola
-tags: java, osgi, maven, servlet
+tags: [java, osgi, maven, servlet]
 ---
 I tried a few times before to start developing using OSGi but never had a chance to work with it in the real life so it's hard to get all the concepts to stick in my head. This post is my way to change that, meaning that I'm trying to learn OSGi deeper and start getting things done using this platform.
 

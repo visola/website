@@ -2,7 +2,7 @@
 date: 2013-12-17
 title: Build tools for Java
 author: Vinicius Isola
-tags: build, tools, java, ant, maven, gradle
+tags: [build, tools, java, ant, maven, gradle]
 ---
 More than a year ago [I wrote a post about](/2012/06/03/Beginning with Maven and M2.html "Beginning with Maven and M2") how I started to use Maven to build my Java applications and how much I loved it! Things changed a lot since then and I, like many others, am moving my projects to [Gradle](http://www.gradle.org). In this post - and a few more to come - I'll be talking about build tools for Java and make some comparisons and explain why I moved to Gradle.
 
