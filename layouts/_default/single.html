@@ -1,8 +1,5 @@
-{{ define "title" }}
-  {{ .Title }} &ndash; {{ .Site.Title }}
-{{ end }}
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <h3>{{ .Params.date }}</h3>
+  <p class="published">{{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</p>
   {{ .Content }}
 {{ end }}

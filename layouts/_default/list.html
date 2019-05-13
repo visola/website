@@ -2,7 +2,7 @@
 {{ range (.Paginator 5).Pages }}
   {{ if eq .Type "posts" }}
     <article>
-      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       <p class="published">{{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</p>
       {{ .Summary }}
     </article>
