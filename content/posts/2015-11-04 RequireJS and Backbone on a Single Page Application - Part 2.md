@@ -2,7 +2,7 @@
 date: 2015-11-04T22:00:00-04:00
 title: RequireJS and Backbone on a Single Page Application - Part 2
 author: Vinicius Isola
-tags: javascript, backbone, requirejs
+tags: [javascript, backbone, requirejs]
 ---
 A Backbone app has three main pieces: routes, models/collections and views. In this part of the two posts I'm going to explain how to setup and use Backbone in a single page application while separating your code in a way that it will be simple to maintain and add new features.
 

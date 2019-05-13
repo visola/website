@@ -2,7 +2,7 @@
 date: 2017-01-15
 title: What is node.js
 author: Vinicius Isola
-tags: node.js, javascript, beginner
+tags: [node.js, javascript, beginner]
 ---
 Node.js is a runtime environment that can be used to build applications using the Javascript language outside the browser. It runs on top of the V8 engine, which is the engine that runs inside the Chromium and Chrome browsers.
 

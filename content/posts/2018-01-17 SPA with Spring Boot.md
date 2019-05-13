@@ -2,7 +2,7 @@
 date: 2018-01-17
 title: SPA with Spring Boot
 author: Vinicius Isola
-tags: spring, spring boot, single page application, spa
+tags: [spring, spring boot, single page application, spa]
 ---
 Single page applications are becoming more and more common these days. If you work with Spring Boot and want to build your frontend using this architecture, you have two options: build the frontend on a separate repository and serve it using some HTTP server or serve your files from your Java application.
 

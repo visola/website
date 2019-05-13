@@ -2,7 +2,7 @@
 title: What is and how to use @ModelAttribute
 date: 2012-04-11
 author: Vinicius Isola
-tags: java, spring, model, attribute, annotation
+tags: [java, spring, model, attribute, annotation]
 ---
 You can get the code for this post in the [blog repository in github](https://github.com/visola/bearprogrammer-examples).
 

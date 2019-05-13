@@ -2,7 +2,7 @@
 date: 2015-11-04T20:00:00-04:00
 title: RequireJS and Backbone on a Single Page Application - Part 1
 author: Vinicius Isola
-tags: javascript, backbone, requirejs
+tags: [javascript, backbone, requirejs]
 ---
 Building single page applications isn't easy. As the app grows and gets more complex your Javascript code gets harder to maintain and duplicate logic start spreading all over the place. Breaking your code in well defined and self contained small modules help to keep the complexity low and organize the logic in an encapsulated and predictable way. But to do that it means that you now need some kind of dependency management system in place.
 

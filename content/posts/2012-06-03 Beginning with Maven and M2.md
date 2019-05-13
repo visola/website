@@ -2,7 +2,7 @@
 title: Beginning with Maven and M2
 date: 2012-06-03
 author: Vinicius Isola
-tags: build, java, maven, m2, eclipse
+tags: [build, java, maven, m2, eclipse]
 ---
 Apache Maven, in my opinion, is one of the most controversial tools around. From my experience, there are three kinds of developers today: those that never heard about Maven, those that hate it and those that can't live without it. For a long time I was in the second group and I just recently turned to the third one, and I'm slowly dragging all my fellow programmers with me!
 

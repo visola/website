@@ -2,7 +2,7 @@
 title: Simple Spring Data Example
 date: 2012-03-26
 author: Vinicius Isola
-tags: java, spring, data, jpa, h2
+tags: [java, spring, data, jpa, h2]
 ---
 As my first post I'm going to do a very simple command line application that manages one entity called Person. The purpose of this example is to demonstrate how powerful the new Spring Data projects family are.
 

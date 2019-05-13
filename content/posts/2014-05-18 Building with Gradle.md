@@ -2,7 +2,7 @@
 date: 2014-05-18
 title: Building with Gradle
 author: Vinicius Isola
-tags: build, gradle, java
+tags: [build, gradle, java]
 ---
 Gradle is a build system that was build from the lessons learned from Ant and Maven. Similarly with Ant, where you have a XML namespace to write build scripts, Gradle is a [DSL](http://en.wikipedia.org/wiki/Domain-specific_language) on top of Groovy that helps you write build scripts. But it goes further with many plugins and conventions (like Maven) that make it possible to get a build up and running with just a few lines of Groovy.
 

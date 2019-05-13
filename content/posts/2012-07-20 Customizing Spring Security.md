@@ -2,7 +2,7 @@
 title: Customizing Spring Security
 date: 2012-07-20
 author: Vinicius Isola
-tags: java, spring, security
+tags: [java, spring, security]
 ---
 [Spring Security](http://static.springsource.org/spring-security/site/) is a very powerful and customizable security framework for JEE applications. This post will show how to integrate it seamlessly with your application setting up a custom login and logout.
 
