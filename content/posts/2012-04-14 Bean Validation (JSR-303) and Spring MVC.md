@@ -2,7 +2,7 @@
 title: Bean Validation (JSR-303) and Spring MVC
 date: 2012-04-14
 author: Vinicius Isola
-tags: java, spring, bean, validation
+tags: [java, spring, bean, validation]
 ---
 The code for this example can be found at the [blog repository in github](https://github.com/visola/bearprogrammer-examples).
 

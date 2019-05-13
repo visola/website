@@ -2,7 +2,7 @@
 date: 2014-09-03
 title: Testing a web application with Gretty, Cucumber and Selenium
 author: Vinicius Isola
-tags: testing, test, java, gretty, cucumber, selenium, gradle
+tags: [testing, test, java, gretty, cucumber, selenium, gradle]
 ---
 The code used in this post is a complete web application built with Spring WebMVC, Spring Data and Spring Security. It contains a lot more than what is explained here and I hope to come back to it in later posts. The code can be found in my [Github repository](https://github.com/visola/bearprogrammer-examples/tree/master/complete-to-do).
 

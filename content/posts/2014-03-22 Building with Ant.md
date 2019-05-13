@@ -2,7 +2,7 @@
 date: 2014-03-22
 title: Building with Ant
 author: Vinicius Isola
-tags: build, ant, java
+tags: [build, ant, java]
 ---
 Ant has been around for a while now (first released in 2000) and it can be compared with a scripting language written in XML. XML tags are translated to Java objects and executed calling methods in the objects created. The following image illustrates the relationship between the XML and the Java objects:
 

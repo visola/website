@@ -2,7 +2,7 @@
 date: 2012-11-12
 title: DAO, Repository and Service, digging deeper
 author: Vinicius Isola
-tags: service, repository, dao, data layer, data
+tags: [service, repository, dao, data layer, data]
 ---
 The first time I heard the term *service layer* I was intrigued by it because I always used a *Data Access Object* to access  my data. I thought it was just a *new way to refer to the same thing*. Of course I was wrong. A couple of years later I started to use Spring Data and again I was confronted with the *Repository* a *different name for the same thing*, at least that was what I thought, and again, I was wrong.
 

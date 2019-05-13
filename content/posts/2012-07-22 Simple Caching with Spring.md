@@ -2,7 +2,7 @@
 title: Simple Caching with Spring
 date: 2012-07-22
 author: Vinicius Isola
-tags: java, spring, cache, caching
+tags: [java, spring, cache, caching]
 ---
 This week an old friend contacted me because he was having memory problems in one of his applications. The problem was very simple: for each user logged in, all application menus and part of the list/combo values were being added to the user session (including some images). That was used to makes things faster, to avoid going to the database multiple times and loading the data all over again.
 
