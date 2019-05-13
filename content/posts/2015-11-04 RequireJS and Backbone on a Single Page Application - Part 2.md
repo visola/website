@@ -1,5 +1,5 @@
 ---
-date: 2015-11-04
+date: 2015-11-04T22:00:00-04:00
 title: RequireJS and Backbone on a Single Page Application - Part 2
 author: Vinicius Isola
 tags: javascript, backbone, requirejs
