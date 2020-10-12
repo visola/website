@@ -122,8 +122,23 @@ h2 {
     width: 24px;
 }
 
-p {
-    text-align: justify;
+#menu {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#menu > li {
+    display: inline-block;
+}
+
+#menu > li:not(:last-child):after {
+    content: ' | ';
+}
+
+#menu a {
+    border: none;
+    text-decoration: none;
 }
 
 pre {

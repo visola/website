@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/main.css" />
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-70095095-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    {{ if not .Site.IsServer }}
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-70095095-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    {{ end }}
 </head>
 <body>
     <div id="header">
@@ -26,6 +28,20 @@
             <a href="/index.xml"><img src="/img/rss.png" /></a>
         </section>
     </div>
+    <ul id="menu">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+            {{ if not (eq .Name "Blog") }}
+                <li>
+                    {{ if $currentPage.IsMenuCurrent "main" . }}
+                        {{ .Name }}
+                    {{ else }}
+                        <a href="{{ .URL }}">{{ .Name }}</a>
+                    {{ end }}
+                </li>
+            {{ end }}
+        {{ end }}
+    </ul>
     <div id="content">
         {{ block "main" . }}
         {{ end }}
