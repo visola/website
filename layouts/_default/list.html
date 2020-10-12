@@ -1,12 +1,11 @@
 {{ define "main" }}
-{{ range (.Paginator 10).Pages }}
-  {{ if eq .Type "posts" }}
-    <article>
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p class="published">{{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</p>
-      {{ .Summary }}
-    </article>
-  {{ end }}
+{{ $paginator := .Paginate ( where (where .Site.AllPages "Type" "posts") "IsSection" false ) }}
+{{ range $paginator.Pages }}
+  <article>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="published">{{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</p>
+    {{ .Summary }}
+  </article>
 {{ end }}
 {{ template "_internal/pagination.html" . }}
 {{ end }}
