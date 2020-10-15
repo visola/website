@@ -15,6 +15,16 @@
     font-size: 20px;
 }
 
+@media (max-width: 480px) {
+    * {
+        font-size: 1.05em;
+    }
+
+    body {
+        font-size: 1.05em;
+    }
+}
+
 a {
     border-bottom: 1px dashed;
     color: rgb(74, 102, 150);
@@ -44,8 +54,18 @@ article h2 {
     font-weight: normal;
 }
 
+@media (max-width: 480px) {
+    article h2 {
+        font-size: 1.5em;
+    }
+}
+
 article p {
     margin: 35px 0;
+}
+
+body {
+    padding: 0 5%;
 }
 
 code, code *, pre, pre *, pre code {
@@ -54,12 +74,11 @@ code, code *, pre, pre *, pre code {
 }
 
 #content {
-    margin: 20px auto;
-    max-width: 800px;
+    margin-top: 20px;
 }
 
 #content img {
-    max-width: 800px;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,8 +100,7 @@ h2 {
 
 #header {
     border-bottom: 1px solid #ccc;
-    margin: 20px auto 0;
-    max-width: 800px;
+    margin-top: 20px;
     padding-bottom: 10px;
     position: relative;
     vertical-align: top;
@@ -93,10 +111,24 @@ h2 {
 }
 
 #header h2 {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     margin: 0 10px;
     top: 5px;
-    width: 300px;
+}
+
+@media (min-width: 480px) {
+    #header h2 i {
+        display: none;
+    }
+}
+
+#header h2 i {
+    border: 1px solid #888;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 3px;
 }
 
 #header img.me {
@@ -122,8 +154,45 @@ h2 {
     width: 24px;
 }
 
-p {
-    text-align: justify;
+#menu {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0;
+}
+
+#menu > li {
+    display: inline-block;
+}
+
+#menu > li:not(:last-child):after {
+    content: ' | ';
+}
+
+@media (max-width: 480px) {
+    #menu {
+        background: white;
+        border-radius: 5px;
+        border: 1px solid #aaa;
+        display: none;
+        padding: 5px;
+        position: fixed;
+        right: 20px;
+        top: 110px;
+    }
+
+    #menu > li {
+        display: block;
+    }
+
+    #menu > li:not(:last-child):after {
+        content: none;
+    }
+}
+
+#menu a {
+    border: none;
+    text-decoration: none;
 }
 
 pre {
@@ -131,6 +200,14 @@ pre {
     border-radius: 3px;
     box-shadow: 0 0px 5px #aaa;
     padding: 5px 2px;
+}
+
+.published {
+    color: #888;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 #ytplayer {

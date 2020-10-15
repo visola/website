@@ -69,7 +69,7 @@ public class Person {
 
 ### Step 3 - Create your EntityManagerFactory
 
-I'll use Spring's [LocalContainerEntityManagerFactoryBean](http://static.springsource.org/spring/docs/3.1.x/javadoc-api/org/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean.html . This is a [FactoryBean](http://static.springsource.org/spring/docs/3.1.x/javadoc-api/org/springframework/beans/factory/FactoryBean.html) that generates `EntityManagerFactory` with specific configuration, avoiding any extra files to setup your persistence layer. That means we won't need a `persistence.xml` nor any other mapping files.
+I'll use Spring's [LocalContainerEntityManagerFactoryBean](http://static.springsource.org/spring/docs/3.1.x/javadoc-api/org/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean.html). This is a [FactoryBean](http://static.springsource.org/spring/docs/3.1.x/javadoc-api/org/springframework/beans/factory/FactoryBean.html) that generates `EntityManagerFactory` with specific configuration, avoiding any extra files to setup your persistence layer. That means we won't need a `persistence.xml` nor any other mapping files.
 
 Inside Spring configuration file I added the following:
 
