@@ -19,8 +19,8 @@
 </head>
 <body>
     <div id="header">
-        <a href="/"><img class="me" src="/img/me.jpg" /></a>
-        <h2><a href="/">Vinnie's Blog</a></h2>
+        <img class="me" src="/img/me.jpg" />
+        <h2>Vinnie's Blog</h2>
         <section class="links">
             <a href="http://twitter.com/IsolaVinicius"><img src="/img/twitter.png" /></a>
             <a href="http://stackoverflow.com/users/2731402/visola"><img src="/img/stackoverflow.png" /></a>
@@ -30,21 +30,18 @@
     </div>
     <ul id="menu">
         {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-            {{ if not (eq .Name "Blog") }}
-                <li>
-                    {{ if $currentPage.IsMenuCurrent "main" . }}
-                        {{ .Name }}
-                    {{ else }}
-                        <a href="{{ .URL }}">{{ .Name }}</a>
-                    {{ end }}
-                </li>
-            {{ end }}
+        {{ range .Site.Menus.main.ByWeight }}
+            <li>
+                {{ if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }}
+                    {{ .Name }}
+                {{ else }}
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+            </li>
         {{ end }}
     </ul>
     <div id="content">
-        {{ block "main" . }}
-        {{ end }}
+        {{ block "main" . }}{{ end }}
     </div>
 </body>
 </html>

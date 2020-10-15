@@ -1,9 +1,20 @@
 {{ define "main" }}
-{{ $paginator := .Paginate ( where (where .Site.AllPages "Type" "posts") "IsSection" false ) }}
+
+{{ if not .Params.hideContent }}
+  <h2>{{ .Title }}</h2>
+  {{ if gt .Date 0 }}
+    <p class="published">{{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</p>
+  {{ end }}
+  {{ .Content }}
+{{ end }}
+
+{{ $paginator := .Paginate ( where (where .Site.AllPages "Type" .Type) "IsSection" false ) }}
 {{ range $paginator.Pages }}
   <article>
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    <p class="published">{{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</p>
+    {{ if gt .Date 0 }}
+      <p class="published">{{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</p>
+    {{ end }}
     {{ .Summary }}
   </article>
 {{ end }}
