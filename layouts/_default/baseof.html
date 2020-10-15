@@ -4,6 +4,7 @@
     <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Vinny's Blog">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Droid+Sans+Mono" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ if not .Site.IsServer }}
@@ -16,11 +17,23 @@
             ga('send', 'pageview');
         </script>
     {{ end }}
+    <script>
+        let menuOpen = false;
+        function handleToggleMenu(e) {
+            menuOpen = !menuOpen;
+            const newDisplay = menuOpen ? 'block' : 'none';
+            document.getElementById("menu").style['display'] = newDisplay;
+        }
+
+        window.addEventListener('load', () => {
+            document.getElementById("extra-menu").addEventListener('click', handleToggleMenu);
+        });
+    </script>
 </head>
 <body>
     <div id="header">
         <img class="me" src="/img/me.jpg" />
-        <h2>Vinnie's Blog</h2>
+        <h2>Vinnie's Blog <i id="extra-menu" class="fas fa-bars"></i></h2>
         <section class="links">
             <a href="http://twitter.com/IsolaVinicius"><img src="/img/twitter.png" /></a>
             <a href="http://stackoverflow.com/users/2731402/visola"><img src="/img/stackoverflow.png" /></a>
@@ -32,10 +45,14 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.main.ByWeight }}
             <li>
-                {{ if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }}
-                    {{ .Name }}
+                {{ if and (eq .Name "Blog") $currentPage.IsHome }}
+                    Blog
                 {{ else }}
-                    <a href="{{ .URL }}">{{ .Name }}</a>
+                    {{ if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }}
+                        {{ .Name }}
+                    {{ else }}
+                        <a href="{{ .URL }}">{{ .Name }}</a>
+                    {{ end }}
                 {{ end }}
             </li>
         {{ end }}
