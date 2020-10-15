@@ -18,7 +18,7 @@ The @ModelAttribute exist to solve this kind of problem. The way it works is tha
 
 <h2>This Example</h2>
 
-A simple web application using Spring MVC and Spring Data (you can check my tutorial for using Spring Data [here](/2012/03/26/simple-spring-data-example.html)). I used Spring Data to create a Person repository. A person is a simple entity that contains just four properties: firstName, lastName, id and created. How to manage that is out of the scope of this tutorial so I'll move forward for the model attribute part.
+A simple web application using Spring MVC and Spring Data (you can check my tutorial for using Spring Data [here]({{< ref "./2012-03-26 Simple Spring Data Example.md" >}}). I used Spring Data to create a Person repository. A person is a simple entity that contains just four properties: firstName, lastName, id and created. How to manage that is out of the scope of this tutorial so I'll move forward for the model attribute part.
 
 I have only one controller in this application. The controller uses the PersonRepository to load and save people in the database.
 
