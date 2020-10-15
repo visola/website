@@ -15,6 +15,16 @@
     font-size: 20px;
 }
 
+@media (max-width: 480px) {
+    * {
+        font-size: 1.05em;
+    }
+
+    body {
+        font-size: 1.05em;
+    }
+}
+
 a {
     border-bottom: 1px dashed;
     color: rgb(74, 102, 150);
@@ -44,6 +54,12 @@ article h2 {
     font-weight: normal;
 }
 
+@media (max-width: 480px) {
+    article h2 {
+        font-size: 1.5em;
+    }
+}
+
 article p {
     margin: 35px 0;
 }
@@ -59,7 +75,7 @@ code, code *, pre, pre *, pre code {
 }
 
 #content img {
-    max-width: 800px;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -146,6 +162,14 @@ pre {
     border-radius: 3px;
     box-shadow: 0 0px 5px #aaa;
     padding: 5px 2px;
+}
+
+.published {
+    color: #888;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 #ytplayer {
