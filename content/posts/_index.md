@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-weight: 010
+weight: 10
 
 hideContent: true
 ---

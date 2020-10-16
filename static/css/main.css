@@ -65,7 +65,8 @@ article p {
 }
 
 body {
-    padding: 0 5%;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 code, code *, pre, pre *, pre code {

@@ -8,9 +8,7 @@ Node.js is a runtime environment that can be used to build applications using th
 
 Let's learn more details about what all of this means.
 
-<iframe id="ytplayer" type="text/html"
-  src="https://www.youtube.com/embed/ln5pM4S2NvU?autoplay=0&origin=https://visola.org"
-  frameborder="0"></iframe>
+{{< youtube ln5pM4S2NvU >}}
 
 <!-- more -->
 
