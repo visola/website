@@ -114,7 +114,7 @@ h2 {
 #header h2 {
     display: flex;
     justify-content: space-between;
-    margin: 0 10px;
+    margin: 0;
     top: 5px;
 }
 
